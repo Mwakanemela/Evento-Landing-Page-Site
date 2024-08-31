@@ -1,0 +1,8 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-image: url('images/evento_bg.jpg');
+    background-position-y: -1500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
