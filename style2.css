@@ -75,7 +75,7 @@ body {
     align-items: center;
     min-width: 320px;
     text-align: center;
-
+    animation: fade-in 0.5s 0.2s backwards;
 }
 
 .heading {
