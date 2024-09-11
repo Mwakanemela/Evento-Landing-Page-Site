@@ -14,11 +14,24 @@ body {
     box-sizing: border-box;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
     padding: 5px;
     flex-direction: column;
+    /* width: 800px; */
 }
 
 .logo {
@@ -53,7 +66,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    min-width: 320px;
     text-align: center;
 
 }
@@ -129,8 +142,9 @@ body {
 .footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* flex-direction: column; */
-    width: 1150px;
+    /* width: 1150px; */
     margin-top: auto;
     font-size: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -146,4 +160,82 @@ body {
 
 @media (min-width: 350px){
 
+    .main {
+        min-width: 350px;
+    }
+
+    .copyright {
+     
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 400px) {
+    .link {
+        margin-right: 40px;
+    }
+
+    .text {
+        padding-left: 30px;
+    }
+
+    .copyright {
+     
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 450px) {
+    .header {
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        animation: fade-in 0.5s;
+    }
+
+    .link {
+        margin-right: 10px;
+    }
+
+    .heading {
+        font-size: 34px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        line-height: 0.9;
+    }
+
+    .copyright {
+     
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 500px) {
+    /* .footer {
+        width: 500px;
+        justify-content: space-between;
+    } */
+}
+
+@media (min-width: 600px) {
+    .footer {
+        justify-content: space-between;
+        
+    }
+
+    .header {
+        justify-content: space-between;
+        min-width: 800px;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .header {
+        justify-content: space-between;
+        min-width: 800px;
+    }
 }
